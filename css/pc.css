@@ -1,0 +1,389 @@
+@charset "utf-8";
+
+h2 {
+  font-size: 26px;
+}
+
+#container,
+footer {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main-banner {
+  position: relative;
+  background: url(/candle/image/pc.jpg) no-repeat;
+  background-size: cover;
+  padding: 0;
+  height: 700px;
+}
+
+header > h1 img {
+  height: 40px;
+}
+
+.menu-list img {
+  height: 20px;
+}
+
+.menu-search img {
+  height: 23px;
+}
+
+.menu-cart img {
+  height: 26px;
+}
+
+.mb-inner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.mb-inner .title {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.mb-inner > a:hover {
+  background: #f5605a;
+}
+
+.candle-list {
+  margin-top: 4.7222%;
+  padding: 0;
+}
+
+.candle-head a {
+  right: 0;
+}
+
+.candle-head a img {
+  height: 34px;
+}
+
+.candles {
+  padding-top: 20px;
+  margin-bottom: 200px;
+}
+
+.candle-head h2 {
+  padding-left: 0px;
+}
+
+.candles li {
+  float: left;
+  width: calc(25% - 30px);
+  margin: 20px 15px;
+}
+
+.candles li a {
+  font-size: 18px;
+}
+
+.candles li a img {
+  margin-bottom: 30px;
+}
+
+.candle-info {
+  padding: 0;
+}
+
+.candle-info > strong {
+  float: left;
+  width: 670px;
+}
+
+.candle-info > strong img {
+  margin-top: 0px;
+}
+
+.candle-info > .candle-article {
+  float: right;
+  width: 450px;
+  margin: 0 40px;
+}
+
+.candle-article h2 {
+  margin-bottom: 40px;
+}
+
+.candle-article p {
+  font-size: 18px;
+}
+
+.candle-article click {
+  float: right;
+}
+
+.click a:hover {
+  background: #52b39f;
+}
+
+.gift-list {
+  padding: 0;
+  margin-top: 200px;
+}
+
+.gifts {
+  padding-top: 20px;
+  margin-bottom: 200px;
+  overflow: hidden;
+}
+
+.gift-head h2 {
+  padding-left: 0px;
+}
+
+.gift-head a {
+  right: 0;
+}
+
+.gift-head a img {
+  height: 34px;
+}
+
+.gifts li {
+  float: left;
+  width: calc(25% - 30px);
+  margin: 20px 15px;
+}
+
+.gifts li a {
+  font-size: 18px;
+}
+
+.gifts li a img {
+  margin-bottom: 30px;
+}
+
+.diffuser-info {
+  padding: 0;
+}
+
+.diffuser-info strong {
+  float: right;
+  width: 670px;
+}
+
+.diffuser-info strong img {
+  margin-top: 0;
+}
+
+.diffuser-info > .candle-article {
+  float: left;
+  width: 450px;
+  margin: 0 40px;
+}
+
+.collection {
+  margin-top: 190px;
+}
+
+.edition {
+  float: left;
+}
+
+.edition > div {
+  width: 570px;
+  height: 570px;
+  background: url(/candle/image/edition-pc.jpg) no-repeat;
+  background-origin: content-box;
+  margin-left: 0px;
+  padding-top: 70px;
+}
+
+.edition h2 {
+  left: 0;
+  writing-mode: initial;
+}
+
+.edition a {
+  float: left;
+  font-size: 26px;
+  margin-top: 20px;
+}
+
+.brand-story {
+  float: right;
+}
+
+.brand-story > div {
+  width: 570px;
+  height: 570px;
+  background: url(/candle/image/brand-story-pc.jpg) no-repeat;
+  background-origin: content-box;
+  margin-left: 0px;
+  margin-top: 0;
+  padding-top: 70px;
+}
+
+.brand-story h2 {
+  left: 0px;
+  writing-mode: initial;
+}
+
+.brand-story a {
+  font-size: 26px;
+  margin-top: 20px;
+}
+
+.warmer-main {
+  width: 100%;
+  padding-top: 200px;
+  background: #97d3c7;
+}
+
+.warmer-main h2 {
+  top: 40%;
+}
+
+.warmer {
+  padding: 0;
+  margin-top: 50px;
+}
+
+.warmer li {
+  float: left;
+  width: calc(25% - 30px);
+  margin: 20px 15px;
+}
+
+.warmer li a {
+  font-size: 18px;
+}
+
+.warmer li a img {
+  margin-bottom: 30px;
+}
+
+.click a {
+  margin-top: 50px;
+  font-size: 16px;
+}
+
+.follow-us {
+  margin-top: 140px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.follow-us p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.sns li {
+  padding-left: 50px;
+  display: inline-block;
+}
+
+.sns li:first-child {
+  padding-left: 0;
+}
+
+.sns .sns1,
+.sns2 {
+  height: 50px;
+}
+
+.sns .sns3 {
+  height: 50px;
+}
+
+.sns .sns4 {
+  height: 48px;
+}
+
+.newsletter {
+  margin-top: 80px;
+  padding: 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.newsletter h2,
+.news {
+  text-align: center;
+}
+
+form {
+  margin-top: 20px;
+}
+
+form input {
+  border: 4px solid #fab8bd;
+  width: 50%;
+  height: 80px;
+  font-size: 18px;
+  vertical-align: bottom;
+}
+
+.newsletter button {
+  margin-top: 0;
+  padding: 27px 40px 26px;
+  font-size: 18px;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-left: -5px;
+}
+
+.events-head {
+  margin-top: 100px;
+  padding: 0;
+}
+
+.events-head a {
+  right: 0;
+}
+
+.events-head a img {
+  height: 34px;
+}
+
+.popup li {
+  float: left;
+  width: calc(25% - 0px);
+}
+
+footer {
+  background: white;
+  border-top: 2px solid black;
+  padding: 120px 0;
+  margin-top: 80px;
+  font-size: 16px;
+}
+
+footer .call {
+  float: left;
+}
+
+footer .copyright {
+  float: right;
+}
+
+footer .call,
+.copyright {
+  position: relative;
+  bottom: 40px;
+}
+
+.foot-nav {
+  float: left;
+  margin-right: 70px;
+}
+
+.foot-nav li a::before {
+  content: "";
+  float: left;
+  display: block;
+  width: 1px;
+  height: 18px;
+  margin: 3px 10px 20px;
+  background: black;
+}
+
+.address {
+  float: right;
+  line-height: 26px;
+}

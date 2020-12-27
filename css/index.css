@@ -1,0 +1,666 @@
+@charset "utf-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap");
+
+/* mobile style */
+* {
+  -webkit-text-size-adjust: none;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body,
+form,
+div,
+h1,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+fieldset,
+th,
+td,
+input,
+textarea,
+button,
+select {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans KR", "notokrR", Malgun Gothic, "맑은 고딕",
+    AppleGothic, Dotum, "돋움", sans-serif;
+  font-weight: normal;
+}
+body {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a[href^="tel"] {
+  font-style: normal;
+}
+address,
+caption,
+em,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+input,
+textarea,
+select {
+  letter-spacing: normal;
+}
+ol,
+ul,
+dl {
+  list-style: none;
+}
+fieldset,
+img {
+  border: 0;
+}
+legend,
+caption {
+  display: none;
+}
+img {
+  border: 0;
+  vertical-align: top;
+}
+hr {
+  display: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+br {
+  letter-spacing: normal;
+}
+p {
+  letter-spacing: normal;
+}
+input {
+  vertical-align: middle;
+}
+input[type="text"],
+input[type="password"] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+input[type="checkbox"] {
+  -webkit-appearance: none;
+}
+input:checked[type="checkbox"] {
+  -webkit-appearance: checkbox;
+}
+input[type="radio"] {
+  border: none;
+  -webkit-appearance: none;
+}
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="file"] {
+  -webkit-appearance: button;
+  border-radius: 0;
+}
+textarea {
+  -webkit-appearance: none;
+}
+select {
+  -webkit-appearance: menulist-text;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+/*header*/
+header {
+  position: relative;
+  height: 55px; /*높이 계산? %*/
+  background: transparent;
+  z-index: 2;
+}
+
+header button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu {
+  position: absolute;
+  left: 20px;
+  top: 36%;
+}
+
+.menu-list {
+  margin-right: 15px;
+}
+
+.menu-list img {
+  height: 17px;
+}
+
+.menu-search img {
+  height: 20px;
+}
+
+header > h1 {
+  padding-top: 15px;
+  text-align: center;
+}
+
+header > h1 img {
+  height: 30px;
+}
+
+.menu-cart {
+  position: absolute;
+  top: 34%;
+  right: 20px;
+  float: right;
+}
+
+.menu-cart img {
+  height: 22px;
+}
+
+/*main*/
+.main-banner {
+  position: relative;
+  padding-top: 165%;
+  height: 0;
+  background: url(/candle/image/main.jpg) no-repeat center 0 / cover;
+  margin-top: -55px;
+  z-index: 1;
+}
+
+.mb-inner {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 2.2rem;
+}
+
+.mb-inner .title {
+  font-weight: bold;
+  font-size: 2.4rem;
+  width: 330px;
+}
+
+.mb-inner > a {
+  display: inline-block;
+  margin-top: 36px;
+  border: 2px solid white;
+  color: white;
+  transition: background 0.8s ease;
+  padding: 18px 30px;
+  font-size: 1.7rem;
+}
+
+.mb-inner > a:active {
+  background: rgba(255, 255, 255, 0.5);
+  color: black;
+  border: none;
+}
+
+.candle-list {
+  padding: 0 5px; /*양옆 패딩값 20px인데, 일부러 5만 넣음. 마진을 안쓰는이유?*/
+  margin-top: 9.7222%;
+}
+
+.candle-head {
+  position: relative;
+}
+
+.candle-head h2 {
+  padding-left: 15px;
+}
+
+.candle-head a {
+  position: absolute;
+  right: 15px;
+  top: 4px;
+}
+
+.candle-head a img {
+  height: 24px;
+}
+
+.candles {
+  overflow: hidden;
+}
+
+.candles li {
+  float: left;
+  width: calc(50% - 30px);
+  margin: 20px 15px;
+}
+
+.candles li a {
+  display: block;
+  font-size: 13px;
+  text-align: center;
+}
+
+.candles li a img {
+  display: block;
+  max-width: 100%;
+  margin-bottom: 4.77%;
+}
+
+.candle-info {
+  padding: 0 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.candle-info strong img {
+  margin-top: 19.444%;
+  width: 100%;
+}
+
+.candle-article > h2 {
+  font-size: 2rem;
+  margin: 6.944% 0;
+}
+
+.candle-article p {
+  margin-top: 6.944%;
+  font-size: 1.6rem;
+}
+
+.candle-article span {
+  color: #52b39f;
+}
+
+.candle-article a {
+  display: inline-block;
+  padding: 20px 30px;
+  text-align: center;
+  background: #97d3c7;
+  margin-top: 10.555%;
+  font-size: 1.5rem;
+}
+
+.click a {
+  display: inline-block;
+  margin-top: 10.555%;
+  background-color: #97d3c7;
+  color: white;
+  transition: background 0.6s ease;
+  padding: 20px 30px;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.click a:active {
+  background: #52b39f;
+  color: white;
+}
+
+.gift-list {
+  padding: 0 5px;
+  margin-top: 19.444%;
+}
+
+.gift-head {
+  position: relative;
+}
+
+.gift-head h2 {
+  padding-left: 15px;
+}
+
+.gift-head a {
+  position: absolute;
+  top: 4px;
+  right: 15px;
+}
+
+.gift-head a img {
+  height: 24px;
+}
+
+.gifts {
+  overflow: hidden;
+}
+
+.gifts li {
+  float: left;
+  width: calc(50% - 30px);
+  margin: 20px 15px; /*그럼 안쪽은 어찌됨?*/
+}
+
+.gifts li a {
+  display: block;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.gifts li a img {
+  display: block;
+  max-width: 100%;
+  margin-bottom: 4.77%;
+}
+
+.diffuser-info {
+  padding: 0 20px;
+  text-align: center;
+  font-size: 1.3rem;
+  overflow: hidden;
+}
+
+.diffuser-info img {
+  width: 100%;
+  margin-top: 19.444%;
+}
+
+/*diffuser 내용은 위에 candle info와 선택자가 같음*/
+
+.collection {
+  margin-top: 19.444%;
+  overflow: hidden;
+}
+
+.edition {
+  overflow: hidden;
+}
+
+.edition > div {
+  position: relative;
+  background: url(/candle/image/collection.jpg) no-repeat center 0 / cover;
+  margin-left: 50px;
+  padding-top: 98.878%;
+  height: 0; /*차이없는데 적어야하는이유?*/
+}
+
+.edition h2 {
+  position: absolute;
+  left: -54px;
+  top: 0;
+  writing-mode: vertical-lr;
+}
+
+.edition a {
+  float: right;
+  text-align: center;
+  padding: 10px;
+  margin-top: 4.166%;
+  font-size: 1.5rem;
+  background: linear-gradient(to top, #f5ccd1 50%, transparent 50%);
+}
+
+.brand-story {
+  overflow: hidden;
+}
+
+.brand-story > div {
+  position: relative;
+  background: url(/candle/image/brand-story.jpg) no-repeat right 0 / cover;
+  padding-top: 98.878%;
+  width: calc(100% - 50px);
+  margin-top: 11.11%;
+}
+
+.brand-story h2 {
+  position: absolute;
+  top: 0;
+  right: -60px;
+  writing-mode: vertical-rl;
+  padding-right: 6px;
+}
+
+.brand-story a {
+  float: left;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.5rem;
+  margin-top: 4.166%;
+  background: linear-gradient(to top, #f5ccd1 50%, transparent 50%);
+}
+
+.candle-warmer {
+  text-align: center;
+  margin-top: 19.444%;
+}
+
+.warmer-main {
+  position: relative;
+  width: 100%;
+  background: url(/candle/image/warmer.png) no-repeat center 0 / cover;
+  padding-top: 57.916%;
+}
+
+.warmer-main h2 {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.warmer {
+  margin-top: 7.777%;
+  padding: 0 5px;
+  overflow: hidden;
+}
+
+.warmer li {
+  float: left;
+  width: calc(50% - 30px);
+  margin: 20px 15px;
+}
+
+.warmer li a {
+  display: block;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.warmer li a img {
+  display: block;
+  max-width: 100%;
+  margin-bottom: 4.77%;
+}
+
+.follow-us {
+  margin-top: 19.444%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.follow-us p {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.youtube {
+  position: relative;
+  padding-top: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.youtube iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.sns {
+  overflow: hidden;
+  text-align: center;
+  margin-top: 5.555%;
+}
+
+.sns li {
+  padding-left: 20px;
+  display: inline-block;
+}
+
+.sns li:first-child {
+  padding-left: 0;
+}
+
+.sns .sns1,
+.sns2 {
+  height: 25px;
+}
+
+.sns .sns3 {
+  height: 24px;
+}
+
+.sns .sns4 {
+  height: 22px;
+}
+
+.newsletter {
+  padding: 0 20px;
+  margin-top: 19.44%;
+  overflow: hidden;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.newsletter > h2,
+.news {
+  text-align: left;
+}
+
+form input {
+  border: none;
+  border-bottom: 4px solid black;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+.newsletter button {
+  margin-top: 10.555%;
+  padding: 20px 30px;
+  background-color: #fab8bd;
+  transition: background 0.6s ease;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.newsletter button:active {
+  background: #f48594;
+  color: white;
+}
+
+.events-head {
+  position: relative;
+  margin-top: 19.44%;
+  padding: 0 20px;
+}
+
+.events-head a {
+  position: absolute;
+  top: 4px;
+  right: 15px;
+}
+
+.events-head a img {
+  height: 24px;
+}
+
+.popup {
+  overflow: hidden;
+}
+
+.popup li {
+  float: left;
+  width: calc(50% - 0px);
+}
+
+.popup li a img {
+  max-width: 100%;
+}
+
+/*footer*/
+footer {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: black;
+  font-size: 1.2rem;
+}
+
+footer {
+  padding: 8.333% 0;
+}
+
+.call a {
+  display: inline-block;
+  border: 2px solid black;
+  color: black;
+  font-size: 1.5rem;
+  padding: 20px 60px;
+  margin-bottom: 10px;
+}
+
+.call p {
+  text-align: center;
+}
+
+.foot-nav li {
+  display: inline-block;
+  margin-top: 8.333%;
+}
+
+.foot-nav li a {
+  color: black;
+}
+
+.foot-nav li a::before {
+  content: "";
+  float: left;
+  display: block;
+  width: 1px;
+  height: 12px;
+  margin: 3px 10px 20px;
+  background: black;
+}
+
+.foot-nav li:first-child > a::before {
+  display: none;
+}
+
+.address {
+  line-height: 20px;
+}
